@@ -12,7 +12,7 @@ public class BlogPostResponse {
     private Instant createdAt;
     private Instant updatedAt;
 
-    public static BlogPostResponse from(BlogPost post) {
+    public static BlogPostResponse from(Post post) {
         return new BlogPostResponse(
                 post.getId(),
                 post.getTitle(),
